@@ -1,8 +1,8 @@
-export function typing(value) {
+export function typing(username) {
   return {
     type: 'USERNAME/TYPING',
     payload: {
-      value
+      username
     }
   }
 }
