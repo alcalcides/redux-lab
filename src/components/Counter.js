@@ -1,4 +1,4 @@
-export function Counter() {
+const Counter = () => {
   function increment() {
     console.log('increasing...')
   }
@@ -16,3 +16,5 @@ export function Counter() {
     </div>
   )
 }
+
+export default Counter

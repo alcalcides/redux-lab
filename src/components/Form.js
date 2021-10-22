@@ -1,4 +1,4 @@
-export function Form() {
+export default function Form() {
   function handleUsername(value) {
     console.log('value :>> ', value)
   }
