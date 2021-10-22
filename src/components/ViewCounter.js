@@ -1,9 +1,9 @@
 import { connect } from 'react-redux'
 
-const ViewCounter = ({ accumulator }) => {
-  return <span>Acumulador: {accumulator}</span>
+const ViewCounter = ({ counter }) => {
+  return <span>Acumulador: {counter}</span>
 }
 
-export default connect((state) => ({ accumulator: state.accumulator }))(
+export default connect((state) => ({ counter: state.counter }))(
   ViewCounter
 )

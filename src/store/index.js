@@ -3,7 +3,7 @@ import { createStore } from 'redux'
 function reducer() {
   let initialState = {
     username: '',
-    accumulator: 0,
+    counter: 0,
   }
 
   return initialState
