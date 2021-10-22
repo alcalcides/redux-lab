@@ -1,10 +1,13 @@
+import ViewUsername from "./ViewUsername";
+import ViewCounter from "./ViewCounter"
+
 export default function Dashboard() {
   return (
     <div>
       <h2>Dashboard</h2>
-      <p>
-        Digitado: <span>...</span>
-      </p>
+      <ViewUsername />
+      <ViewCounter />
     </div>
   )
 }
+

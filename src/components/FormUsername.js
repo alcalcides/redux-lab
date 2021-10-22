@@ -1,4 +1,4 @@
-export default function Form() {
+const FormUsername = () => {
   function handleUsername(value) {
     console.log('value :>> ', value)
   }
@@ -14,3 +14,5 @@ export default function Form() {
     </form>
   )
 }
+
+export default FormUsername

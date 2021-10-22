@@ -1,4 +1,4 @@
-const Counter = () => {
+const CounterController = () => {
   function increment() {
     console.log('increasing...')
   }
@@ -17,4 +17,4 @@ const Counter = () => {
   )
 }
 
-export default Counter
+export default CounterController

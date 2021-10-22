@@ -1,10 +1,9 @@
 import { Provider } from 'react-redux'
 
 import './App.css'
-
-import Counter from './components/Counter'
+import CounterController from './components/CounterController'
 import Dashboard from './components/Dashboard'
-import Form from './components/Form'
+import FormUsername from './components/FormUsername'
 import store from './store'
 
 export default function App() {
@@ -12,8 +11,8 @@ export default function App() {
     <div className='App'>
       <Provider store={store}>
         <h1>Teste redux</h1>
-        <Counter />
-        <Form />
+        <CounterController />
+        <FormUsername />
         <Dashboard />
       </Provider>
     </div>
