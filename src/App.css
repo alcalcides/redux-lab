@@ -1,3 +1,7 @@
 div {
     background-color: var(--background-color);
 }
+
+form {
+    background-color: aliceblue;
+}
