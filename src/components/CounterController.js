@@ -15,4 +15,4 @@ const CounterController = ({ dispatch }) => {
   )
 }
 
-export default connect()(CounterController)
+export default connect(null)(CounterController)
