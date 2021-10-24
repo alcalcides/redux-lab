@@ -1,5 +1,5 @@
-import ViewUsername from "./ViewUsername";
-import ViewCounter from "./ViewCounter"
+import ViewUsername from "../ViewUsername";
+import ViewCounter from "../ViewCounter"
 
 export default function Dashboard() {
   return (
