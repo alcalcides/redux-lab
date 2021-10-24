@@ -1,20 +1,16 @@
-const COUNTER_INITIAL_STATE = {
-  counter: 0
-}
+import INITIAL_STATE from './INITIAL_STATE'
 
-export function counterReducer(state = COUNTER_INITIAL_STATE, action) {
-  switch (action.type) {
-    case 'COUNTER/INCREMENT':
-      return {
-        ...state,
-        counter: state.counter + action.payload.step
-      }
-    case 'COUNTER/DECREMENT':
-      return {
-        ...state,
-        counter: state.counter - action.payload.step
-      }
-    default:
-      return COUNTER_INITIAL_STATE
-  }
+export function counterReducer(state = INITIAL_STATE, action) {
+	const newState = { ...state } // not mutation!
+	switch (action.type) {
+		case 'COUNTER/INCREMENT':
+			newState.counter = newState.counter + action.payload.step
+			break
+		case 'COUNTER/DECREMENT':
+			newState.counter = newState.counter - action.payload.step
+			break
+		default:
+			break
+	}
+	return newState
 }
