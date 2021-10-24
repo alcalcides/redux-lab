@@ -1,6 +1,8 @@
+import TYPE from "../TYPE"
+
 export function typing(username) {
   return {
-    type: 'USERNAME/TYPING',
+    type: TYPE.USERNAME_TYPING,
     payload: {
       username
     }
@@ -9,6 +11,6 @@ export function typing(username) {
 
 export function loseFocus() {
   return {
-    type: 'USERNAME/LOST_FOCUS'
+    type: TYPE.USERNAME_LOST_FOCUS
   }
 }

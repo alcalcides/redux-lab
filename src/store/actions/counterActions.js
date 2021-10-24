@@ -1,6 +1,8 @@
+import TYPE from "../TYPE"
+
 export function incrementCounter() {
   return {
-    type: 'COUNTER/INCREMENT',
+    type: TYPE.COUNTER_INCREMENT,
     payload: {
       step: 1
     }
@@ -9,7 +11,7 @@ export function incrementCounter() {
 
 export function decrementCounter() {
   return {
-    type: 'COUNTER/DECREMENT',
+    type: TYPE.COUNTER_DECREMENT,
     payload: {
       step: 1
     }
