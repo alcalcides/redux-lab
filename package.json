@@ -1,6 +1,6 @@
 {
   "name": "try-redux",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^8.10.1",
