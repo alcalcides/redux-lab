@@ -1,5 +1,5 @@
-import { trackUsernameTypingAction } from '../../store/actions/usernameActions'
+import { bindActionCreators } from 'redux'
+import * as UsernameActions from '../../store/actions/usernameActions'
 
-export const mapDispatchToProps = (dispatch) => ({
-  trackUsernameTypingAction: (username) => dispatch(trackUsernameTypingAction(username))
-})
+export const mapDispatchToProps = dispatch =>
+	bindActionCreators(UsernameActions, dispatch)
