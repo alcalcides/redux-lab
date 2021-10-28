@@ -1,10 +1,11 @@
 import { connect } from 'react-redux'
 import { mapDispatchToProps } from './mapDispatchToProps'
 
-const FormUsername = ({ trackUsernameTypingAction }) => {
+const FormUsername = ({ trackUsernameTyping }) => {
 
   function handleUsernameTyping(e) {
-    trackUsernameTypingAction(e.target.value)
+    console.log("logging typing", e.target.value)
+    trackUsernameTyping(e.target.value)
   }
 
   return (
