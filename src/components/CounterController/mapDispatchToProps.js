@@ -1,9 +1,4 @@
-import {
-  decrementCounter,
-  incrementCounter
-} from '../../store/actions/counterActions';
+import { bindActionCreators } from 'redux';
+import * as CounterActions from '../../store/actions/counterActions';
 
-export const mapDispatchToProps = (dispatch) => ({
-  incrementCounter: () => dispatch(incrementCounter()),
-  decrementCounter: () => dispatch(decrementCounter())
-});
+export const mapDispatchToProps = (dispatch) => bindActionCreators(CounterActions, dispatch)
