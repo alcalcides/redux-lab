@@ -1,12 +1,12 @@
 import { connect } from 'react-redux'
 import { mapDispatchToProps } from './mapDispatchToProps'
 
-const CounterController = ({ incrementCounterAction, decrementCounterAction }) => {
+const CounterController = ({ incrementCounter, decrementCounter }) => {
   return (
     <div>
       <p>
-        <button onClick={incrementCounterAction}>+</button>
-        <button onClick={decrementCounterAction}>-</button>
+        <button onClick={incrementCounter}>+</button>
+        <button onClick={decrementCounter}>-</button>
       </p>
     </div>
   )

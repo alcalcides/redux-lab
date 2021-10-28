@@ -4,6 +4,6 @@ import {
 } from '../../store/actions/counterActions';
 
 export const mapDispatchToProps = (dispatch) => ({
-  incrementCounterAction: () => dispatch(incrementCounter()),
-  decrementCounterAction: () => dispatch(decrementCounter())
+  incrementCounter: () => dispatch(incrementCounter()),
+  decrementCounter: () => dispatch(decrementCounter())
 });
