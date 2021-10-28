@@ -1,5 +1,5 @@
-import { typing } from '../../store/actions/usernameActions'
+import { trackUsernameTypingAction } from '../../store/actions/usernameActions'
 
 export const mapDispatchToProps = (dispatch) => ({
-  typingAction: (username) => dispatch(typing(username))
+  trackUsernameTypingAction: (username) => dispatch(trackUsernameTypingAction(username))
 })

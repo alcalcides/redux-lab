@@ -1,8 +1,8 @@
 import TYPE from "../TYPE"
 
-export function typing(username) {
+export function trackUsernameTypingAction(username) {
   return {
-    type: TYPE.USERNAME_TYPING,
+    type: TYPE.USERNAME_TRACK_TYPING,
     payload: {
       username
     }

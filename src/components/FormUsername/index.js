@@ -1,11 +1,16 @@
 import { connect } from 'react-redux'
 import { mapDispatchToProps } from './mapDispatchToProps'
 
-const FormUsername = ({ typingAction }) => {
+const FormUsername = ({ trackUsernameTypingAction }) => {
+
+  function handleUsernameTyping(e) {
+    trackUsernameTypingAction(e.target.value)
+  }
+
   return (
     <form>
       <input
-        onChange={(e) => typingAction(e.target.value)}
+        onChange={handleUsernameTyping}
         type='text'
         name='username'
         placeholder='type your username'
