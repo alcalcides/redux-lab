@@ -8,9 +8,3 @@ export function trackUsernameTyping(username) {
     }
   }
 }
-
-export function loseFocus() {
-  return {
-    type: TYPE.USERNAME_LOST_FOCUS
-  }
-}

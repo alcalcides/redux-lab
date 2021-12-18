@@ -1,5 +1,3 @@
-export function mapStateToProps() {
-	return (state) => ({
-		username: state.usernameReducer.username
-	})
-}
+export const mapStateToProps = state => ({
+	counter: state.username
+})
