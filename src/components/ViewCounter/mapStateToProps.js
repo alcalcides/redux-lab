@@ -1,3 +1,3 @@
-export const mapStateToProps = state => ({
-	counter: state.counter
-})
+export const mapStateToProps = state => {
+	return { counter: state.counterReducer.counter }
+}

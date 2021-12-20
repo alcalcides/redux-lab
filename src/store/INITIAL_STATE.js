@@ -1,6 +1,5 @@
 const INITIAL_STATE = {
 	username: '',
-	lostFocus: false,
 	counter: 0
 }
 
