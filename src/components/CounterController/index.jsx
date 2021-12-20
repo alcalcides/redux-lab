@@ -14,10 +14,9 @@ const CounterController = ({ incrementCounter, decrementCounter, requestStartWar
 
 	return (
 		<div>
-			<p>
-				<button onClick={handleButtonIncrement}>+</button>
-				<button onClick={handleButtonDecrement}>-</button>
-			</p>
+			<label>Counter:</label>
+			<button onClick={handleButtonIncrement}>&#11014;</button>
+			<button onClick={handleButtonDecrement}>&#11015;</button>
 		</div>
 	)
 }
