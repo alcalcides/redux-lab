@@ -1,7 +1,7 @@
 import ViewUsername from "../ViewUsername";
 import ViewCounter from "../ViewCounter"
 import { useEffect, useState } from "react";
-import { doGetRequest } from './../../services/doGetResquest';
+import { doGetRequest } from '../../services/doGetResquest';
 
 
 export default function Dashboard() {
