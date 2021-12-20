@@ -14,6 +14,5 @@ export function counterReducer(state = INITIAL_STATE, action) {
 		default:
 			break
 	}
-	console.log(`newState`, newState)
 	return newState
 }
