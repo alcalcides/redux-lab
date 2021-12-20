@@ -1,16 +1,9 @@
-import { connect, useDispatch } from 'react-redux'
+import { connect } from 'react-redux'
 import { mapStateToProps } from './mapStateToProps'
-import { useEffect } from 'react'
-import { requestStartWarsPersonage } from './../../store/actions/starWarsActions'
 
-const ViewStarWarsPersonage = ({ counter, name, eyeColor }) => {
-	const dispatch = useDispatch()
-
-	useEffect(() => {
-		dispatch(requestStartWarsPersonage(counter))
-	}, [counter, dispatch])
-
-	return <p>{`${name} has ${eyeColor} eyes`}</p>
+const ViewStarWarsPersonage = ({ name, eyeColor }) => {
+	if (name === 'Not found' || name === '') return <p>Try another number</p>
+	else return <p>{`${name} has ${eyeColor} eyes`}</p>
 }
 
 export default connect(mapStateToProps)(ViewStarWarsPersonage)

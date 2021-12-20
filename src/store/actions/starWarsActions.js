@@ -1,7 +1,9 @@
 import TYPE from '../TYPE'
 import { doGetRequest } from '../../services/doGetResquest'
+import store from '../index'
 
-export async function requestStartWarsPersonage(id) {
+export async function requestStartWarsPersonage() {
+	const id = store.getState().counterReducer.counter
 	const API_URL = 'https://swapi.py4e.com/api/'
 	const response = await doGetRequest(`${API_URL}people/${id}/`)
 
