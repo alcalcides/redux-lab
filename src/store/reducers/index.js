@@ -2,10 +2,12 @@ import { combineReducers } from 'redux'
 
 import { counterReducer } from './counterSlice'
 import { usernameReducer } from './usernameSlice'
+import { starWarsReducer } from './starWarsSlice'
 
 const reducersList = {
 	counterReducer,
-	usernameReducer
+	usernameReducer,
+	starWarsReducer
 }
 
 const rootReducer = combineReducers(reducersList)

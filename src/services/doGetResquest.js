@@ -1,5 +1,6 @@
 export const doGetRequest = async (path) => {
     const url = `${path}`
     const response = await fetch(url)
-    return await response.json()
+    const data = await response.json()
+    return data
 }

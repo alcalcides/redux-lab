@@ -1,29 +1,16 @@
-import { connect } from 'react-redux'
+import { connect, useDispatch } from 'react-redux'
 import { mapStateToProps } from './mapStateToProps'
-import { useEffect, useState } from 'react'
-import { doGetRequest } from '../../services/doGetResquest'
+import { useEffect } from 'react'
+import { requestStartWarsPersonage } from './../../store/actions/starWarsActions'
 
-const API_URL = 'https://swapi.py4e.com/api/'
-
-const ViewStarWarsPersonage = ({ counter }) => {
-	const [person, setPerson] = useState('')
-	const [eyeColor, setEyeColor] = useState('')
+const ViewStarWarsPersonage = ({ counter, name, eyeColor }) => {
+	const dispatch = useDispatch()
 
 	useEffect(() => {
-		const apiConsult = async () => {
-			const response = await doGetRequest(`${API_URL}people/${counter}/`)
-			console.log(`response`, response)
-			setPerson(response.name)
-			setEyeColor(response.eye_color)
-		}
-		apiConsult()
-	})
+		dispatch(requestStartWarsPersonage(counter))
+	}, [counter, dispatch])
 
-	return (
-		<p>
-			{person} has {eyeColor} eyes
-		</p>
-	)
+	return <p>{`${name} has ${eyeColor} eyes`}</p>
 }
 
 export default connect(mapStateToProps)(ViewStarWarsPersonage)
