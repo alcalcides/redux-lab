@@ -5,11 +5,13 @@ const CounterController = ({ incrementCounter, decrementCounter, requestStartWar
 	function handleButtonIncrement() {
 		incrementCounter()
 		requestStartWarsPersonage()
+		window.dataLayer.push({ clickButton: 'increment' })
 	}
 
 	function handleButtonDecrement() {
 		decrementCounter()
 		requestStartWarsPersonage()
+		window.dataLayer.push({ clickButton: 'decrement' })
 	}
 
 	return (
