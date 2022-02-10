@@ -1,6 +1,7 @@
 import ViewUsername from '../ViewUsername'
 import ViewCounter from '../ViewCounter'
 import ViewStartWarsPersonage from '../ViewStartWarsPersonage'
+import ViewEnvironmetVariables from '../ViewEnvironmetVariables'
 
 export default function Dashboard() {
 	return (
@@ -9,6 +10,7 @@ export default function Dashboard() {
 			<ViewUsername />
 			<ViewCounter />
 			<ViewStartWarsPersonage />
+			<ViewEnvironmetVariables />
 		</div>
 	)
 }
