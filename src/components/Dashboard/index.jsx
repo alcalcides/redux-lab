@@ -2,6 +2,7 @@ import ViewUsername from '../ViewUsername'
 import ViewCounter from '../ViewCounter'
 import ViewStartWarsPersonage from '../ViewStartWarsPersonage'
 import ViewEnvironmetVariables from '../ViewEnvironmetVariables'
+import ToggleSwitch from './../ToggleSwitch/index';
 
 export default function Dashboard() {
 	return (
@@ -11,6 +12,7 @@ export default function Dashboard() {
 			<ViewCounter />
 			<ViewStartWarsPersonage />
 			<ViewEnvironmetVariables />
+			<ToggleSwitch />
 		</div>
 	)
 }
